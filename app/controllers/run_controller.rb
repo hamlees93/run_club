@@ -36,6 +36,6 @@ class RunController < ApplicationController
   end
 
   def run_params
-    params.require(:run).permit(:distance, :time)
+    params.require(:run).permit(:distance, :time, :date, :pace, :heartrate)
   end
 end
